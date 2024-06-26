@@ -62,7 +62,7 @@ nav ul li a:hover {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 h2 {
@@ -82,7 +82,7 @@ h2 {
     max-width: 300px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 .portfolio-item img {
@@ -102,7 +102,7 @@ h2 {
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 form {
@@ -111,7 +111,7 @@ form {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 form label {
@@ -145,6 +145,7 @@ footer {
     padding: 10px 0;
     text-align: center;
     color: #111010;
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 .tip-1 {
@@ -154,7 +155,7 @@ footer {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 .tip-2 {
@@ -164,7 +165,7 @@ footer {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.919);
 }
 
 .home-section {
