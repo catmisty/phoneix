@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeHarbor Interiors</title>
+    <link rel="stylesheet" href="pho.css">
+</head>
+<body>
+    <header style="background-image: url('header-background.jpg');">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.PNG" alt="HomeHarbor Interiors Logo">
+            </div>
+            <h1>HomeHarbor Interiors</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#tips">Design Tips</a></li>
+                    <li><a href="#consultation">Book a Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to HomeHarbor Interiors</h2>
+            <div class="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <div class="caption">
+                            <h1><center>Discover our new designs</center></h1>
+                            <!--h2>Creating aesthetic and functional spaces for your home.</h2-->
+                        </div>
+                    </div>
+                    <div class="slide" id="s2">
+                        <div class="caption">
+                            <!--h1><center>Discover our new designs</center></h1-->
+                        </div>
+                    </div>
+                    <div class="slide" id="s3">
+                        <div class="caption">
+                            <!--h2>Transforming spaces with elegance.</h2-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+            <h4><center>Creating aesthetic and functional spaces for your home.</center></h4>
+            <center><a href="#portfolio" class="explore-button">Explore</a></center>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="pro 1.png" alt="Project 1">
+                    <p>Flamingo theme with Gallery wall mockup psd hanging in tropical wall dining room.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="pro 2.png" alt="Project 2">
+                    <p>Living room of a large victorian style house. Fully furnished interior of contemporary living room interior.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="pro 3.JPEG" alt="Project 3">
+                    <p>Oceanside Dining Room with classic kitchen made with toughened glass.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="pro 4.PNG" alt="Project 1">
+                    <p>Living room with toughened glass window with beautiful view </p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="pro 6.PNG" alt="Project 1">
+                    <p>Dining Room with classic kitchen.Fully furnished interior of contemporary Dining room.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="pro 5.PNG" alt="Project 1">
+                    <p>Living room with german town library. work space area </p>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="tips-section">
+        <div class="container">
+            <h2>Design Tips</h2>
+            <div class="tips-content">
+                <div class="tip">
+                    <div class="tip-1">
+                    <p><ul> 
+                        <b>Understand the Space:</b></br>
+                        <li>Before starting any design project, take the time to understand the space you are working with. Measure the dimensions, note any architectural features, and consider how the space will be used.</li>
+                        <b>Create a Focal Point:</b></br>
+                        <li>Every room should have a focal point that draws the eye. This could be a piece of art, a piece of furniture, or even a unique architectural feature. Arrange your furniture and decor around this focal point.</li></ul>
+                    </p>
+                    </div>
+                </div>
+                <div class="tip">
+                    <div class="tip-2">
+                    <p><ul>
+                        <b>Balance Function and Aesthetics:</b></br>
+                        <li>While it's important for a space to look good, it should also be functional. Choose furniture and decor that serve a purpose and enhance the usability of the room.</li></br>
+                        <b>Use a Cohesive Color Scheme:</b></br>
+                        <li>Select a color palette that reflects the mood you want to create. Stick to a cohesive color scheme throughout the room to create a harmonious look. Use accent colors to add interest and contrast.</li></ul>
+                    </p>
+                    </div>
+                </div>
+                <!-- Add more tips as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="consultation" class="consultation-section">
+        <div class="container">
+            <h2>Book a Consultation</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HomeHarbor Interiors. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
