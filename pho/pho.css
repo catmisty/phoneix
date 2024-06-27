@@ -21,6 +21,16 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+#success-message {
+    display: none;
+    color: green;
+    margin-top: 20px;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
 
 header .logo img {
     width: 100px;
