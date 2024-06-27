@@ -24,9 +24,11 @@ function sendEmail() {
             console.log("Email sent:", response); // Log response message
             if (response === 'OK') {
                 document.getElementById("success-message").style.display = "block";
+                document.getElementById("error-message").style.display = "none";
                 document.getElementById("consultation-form").reset(); // Optional: Reset the form
             } else {
                 document.getElementById("error-message").style.display = "block";
+                document.getElementById("success-message").style.display = "none";
                 alert("Failed to send email: " + response);
             }
         }
@@ -34,6 +36,7 @@ function sendEmail() {
         error => {
             console.error("Failed to send email:", error);
             document.getElementById("error-message").style.display = "block";
+            document.getElementById("success-message").style.display = "none";
             alert("Failed to send email: " + error);
         }
     );
