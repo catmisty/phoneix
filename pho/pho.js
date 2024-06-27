@@ -20,14 +20,14 @@ function sendEmail() {
         Subject: "New Consultation Request",
         Body: `Name: ${name} <br> Email: ${email} <br> Preferred Date: ${date} <br> Message: ${message}`
     }).then(
-        message => {
-            console.log("Email sent:", message); // Log response message
-            if (message === 'OK') {
+        response => {
+            console.log("Email sent:", response); // Log response message
+            if (response === 'OK') {
                 document.getElementById("success-message").style.display = "block";
                 document.getElementById("consultation-form").reset(); // Optional: Reset the form
             } else {
                 document.getElementById("error-message").style.display = "block";
-                alert("Failed to send email: " + message);
+                alert("Failed to send email: " + response);
             }
         }
     ).catch(
@@ -38,4 +38,3 @@ function sendEmail() {
         }
     );
 }
-
