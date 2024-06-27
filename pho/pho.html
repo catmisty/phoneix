@@ -127,7 +127,7 @@
     <section id="consultation" class="consultation-section">
         <div class="container">
             <h2>Book a Consultation</h2>
-            <form action="submit_form.php" method="post">
+            <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -143,13 +143,8 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-        <div id="success-message" style="display:none; color: green; margin-top: 20px;">Your message has been sent successfully!</div>
-        </div>
-        <div id="error-message" style="display: none;">Failed to send your message. Please try again later.</div>
-        </div>
-        </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="scripts.js"></script>
+         <div id="success-message" style="display:none; color: green; margin-top: 20px;">Your message has been sent successfully!</div>
+        <div id="error-message" style="display: none; color: red; margin-top: 20px;">Failed to send your message. Please try again later.</div>
     </section>
 
     <footer>
@@ -157,5 +152,7 @@
             <p>&copy; 2024 HomeHarbor Interiors. All rights reserved.</p>
         </div>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="scripts.js"></script>
 </body>
 </html>
