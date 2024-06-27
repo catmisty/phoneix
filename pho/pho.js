@@ -20,24 +20,22 @@ function sendEmail() {
         Subject: "New Consultation Request",
         Body: `Name: ${name} <br> Email: ${email} <br> Preferred Date: ${date} <br> Message: ${message}`
     }).then(
-        response => {
-            console.log("Email sent:", response); // Log response message
-            if (response === 'OK') {
+        message => {
+            console.log("Email sent:", message); // Log response message
+            if (message === 'OK') {
                 document.getElementById("success-message").style.display = "block";
-                document.getElementById("error-message").style.display = "none";
                 document.getElementById("consultation-form").reset(); // Optional: Reset the form
             } else {
                 document.getElementById("error-message").style.display = "block";
-                document.getElementById("success-message").style.display = "none";
-                alert("Failed to send email: " + response);
+                alert("Failed to send email: " + message);
             }
         }
     ).catch(
         error => {
             console.error("Failed to send email:", error);
             document.getElementById("error-message").style.display = "block";
-            document.getElementById("success-message").style.display = "none";
             alert("Failed to send email: " + error);
         }
     );
 }
+
